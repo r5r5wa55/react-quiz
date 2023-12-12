@@ -9,10 +9,11 @@ export const  DateContext = createContext()
 function App() {
 
   const [appState,setAppState]=useState("menu")
+  const [score,setScore] = useState(0)
 
 
   return (
-    <DateContext.Provider value={{appState,setAppState}}>
+    <DateContext.Provider value={{appState,setAppState,score,setScore}}>
      <div className="app">
         <h1>werapol</h1>
         {appState === "menu" && <Menu />}

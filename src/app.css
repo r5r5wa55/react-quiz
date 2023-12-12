@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: black;
 }
 
 .app {
@@ -11,7 +12,7 @@ body{
     height: 100vh;
 
 }
-.menu,.quiz{
+.menu,.quiz,.score{
     background-color:lightblue;
     height: 500px;
     width: 500px;
@@ -27,9 +28,14 @@ button{
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 button:hover{
     background-color: blue;
     color: white;
 
+}
+h1{
+    text-align: center;
+    font-size: 24px;
 }
